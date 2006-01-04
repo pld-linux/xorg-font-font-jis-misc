@@ -1,16 +1,15 @@
 Summary:	jis-misc font
 Summary(pl):	Font jis-misc
 Name:		xorg-font-font-jis-misc
-Version:	0.99.1
+Version:	1.0.0
 Release:	0.1
 License:	MIT
 Group:		Fonts
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/font/font-jis-misc-%{version}.tar.bz2
-# Source0-md5:	1f6609bfa9912831d73df177fbe535b3
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/font/font-jis-misc-%{version}.tar.bz2
+# Source0-md5:	61febb49a71065723a1fba17cbf23c67
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-app-bdftopcf
 BuildRequires:	xorg-app-mkfontdir
 BuildRequires:	xorg-app-mkfontscale
