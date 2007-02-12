@@ -1,5 +1,5 @@
 Summary:	jis-misc font
-Summary(pl.UTF-8):   Font jis-misc
+Summary(pl.UTF-8):	Font jis-misc
 Name:		xorg-font-font-jis-misc
 Version:	1.0.0
 Release:	0.1
