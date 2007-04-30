@@ -1,11 +1,11 @@
-Summary:	jis-misc font
-Summary(pl.UTF-8):	Font jis-misc
+Summary:	JIS bitmap fonts
+Summary(pl.UTF-8):	Fonty bitmapowe JIS
 Name:		xorg-font-font-jis-misc
 Version:	1.0.0
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		Fonts
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/font/font-jis-misc-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/font/font-jis-misc-%{version}.tar.bz2
 # Source0-md5:	61febb49a71065723a1fba17cbf23c67
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
@@ -16,13 +16,15 @@ BuildRequires:	xorg-app-mkfontscale
 BuildRequires:	xorg-util-util-macros
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/misc
+# contains useful aliases for these fonts
+Requires:	xorg-font-font-alias >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-jis-misc font.
+Japanese JIS Fixed kanji bitmap fonts.
 
 %description -l pl.UTF-8
-Font jis-misc.
+Japońskie fonty bitmapowe kanji JIS Fixed.
 
 %prep
 %setup -q -n font-jis-misc-%{version}
@@ -54,4 +56,4 @@ fontpostinst misc
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
-%{_fontsdir}/misc/*.pcf.gz
+%{_fontsdir}/misc/jiskan*.pcf.gz
