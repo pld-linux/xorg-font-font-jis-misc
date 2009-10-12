@@ -1,12 +1,12 @@
 Summary:	JIS bitmap fonts
 Summary(pl.UTF-8):	Fonty bitmapowe JIS
 Name:		xorg-font-font-jis-misc
-Version:	1.0.0
-Release:	2
+Version:	1.0.1
+Release:	1
 License:	MIT
 Group:		Fonts
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-jis-misc-%{version}.tar.bz2
-# Source0-md5:	61febb49a71065723a1fba17cbf23c67
+# Source0-md5:	5835c99d056f4a29d7d6a5ae873cf00e
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -35,6 +35,8 @@ Japońskie fonty bitmapowe kanji JIS Fixed.
 %{__autoconf}
 %{__automake}
 %configure \
+	--build=%{_host_platform} \
+	--host=%{_host_platform} \
 	--with-fontdir=%{_fontsdir}/misc
 
 %{__make}
