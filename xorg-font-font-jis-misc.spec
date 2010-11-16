@@ -1,19 +1,19 @@
 Summary:	JIS bitmap fonts
 Summary(pl.UTF-8):	Fonty bitmapowe JIS
 Name:		xorg-font-font-jis-misc
-Version:	1.0.2
+Version:	1.0.3
 Release:	1
 License:	MIT
 Group:		Fonts
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-jis-misc-%{version}.tar.bz2
-# Source0-md5:	b08eb798739f85158fee74977cf335c2
+# Source0-md5:	cb7b57d7800fd9e28ec35d85761ed278
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	xorg-app-bdftopcf
 BuildRequires:	xorg-app-mkfontdir
 BuildRequires:	xorg-app-mkfontscale
-BuildRequires:	xorg-font-font-util >= 1.1
+BuildRequires:	xorg-font-font-util >= 1.2
 BuildRequires:	xorg-util-util-macros >= 1.3
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/misc
